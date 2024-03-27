@@ -251,6 +251,11 @@ cursor: pointer;
     font-size: 1.2rem;
 }
 
+.nav_img{
+    width: 30px;
+    height: 30px;
+}
+
 
 .nav_close{
     position: absolute;
@@ -468,7 +473,7 @@ cursor: pointer;
 
 /* ================== Skills ===================== */
 /* Keseluruhan skills */
-.skills_container{
+.skills_container, .certificates_container{
     row-gap: 0;
 }
 
@@ -1202,6 +1207,7 @@ input:-webkit-autofill:active{
     
     .about_container,
     .skills_container,
+    .certificates_container,
     .portfolio_content,
     .contact_container,
     .footer_container{
@@ -1262,6 +1268,7 @@ input:-webkit-autofill:active{
 
     .nav_icon,
     .nav_close,
+    .nav_img,
     .nav_toggle{
         display: none;
     }

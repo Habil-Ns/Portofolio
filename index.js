@@ -72,32 +72,35 @@ let swiper_portfolio = new Swiper(".portfolio_container", {
 });
 
 // ============== Scroll section active link ==================
-// Didapat dari github
 // Icon menjadi berwarna ketika discroll atau di klik (menuju tempatnya) misal ke about maka icon about menjadi berwarna
 // Section id merujuk pada section section di html, nav_menu merujuk pada menu menu yang terdapat di html dan active-link merujuk pada CSS dan active link ini juga diberikan ke html sebagai default
 
-const sections = document.querySelectorAll('section[id]')
+const sections = document.querySelectorAll('section[id]');
 
-function scrollActive(){
-    const scrollY = window.pageYOffset
+function scrollActive() {
+    const scrollY = window.pageYOffset;
 
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
+        const sectionId = current.getAttribute('id');
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
-            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        const navLink = document.querySelector('.nav_menu a[href="#' + sectionId + '"]');
+
+        if (navLink) {
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                navLink.classList.add('active-link');
+            } else {
+                navLink.classList.remove('active-link');
+            }
         }
-    })
+    });
 }
-window.addEventListener('scroll', scrollActive)
+
+window.addEventListener('scroll', scrollActive);
 
 
 // ============== Change Background Header ==================
-// Didapatkan dari github
 // Memberikan bayangan pada header ketika dilakukan scroll (vertikal)
 // Header merujuk pada class header di html, scroll-header pada terdapat pada css
 
@@ -110,7 +113,6 @@ window.addEventListener('scroll', scrollHeader)
 
 
 // ==================== Show scroll up ========================
-// didapat dari github
 // Ketika layar discroll kebawah maka akan menampilkan tanda panah
 // id harus sesuai dengan id yang terdapat di html, nama show-scroll sesuai dengan di CSS
 
@@ -122,7 +124,6 @@ function scrollup(){
 window.addEventListener('scroll', scrollup)
 
 // =================== Dark light theme ======================
-// Didapat dari github
 // idnya harus sesuai yang di HTMl, const darktheme harus sesuai dengan yang di CSS, icontheme diambil dari iconscout
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'tema-gelap'
