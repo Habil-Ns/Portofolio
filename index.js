@@ -20,7 +20,6 @@ if(navclose){
     })
 }
 
-// Menghapus menu mobile
 // Menghapus menu mobile queryselectorall (memilih seluruh class)
 const navlink = document.querySelectorAll(".nav_link");
 
@@ -58,61 +57,6 @@ skills_Header.forEach((bantuan)=> {
 })
 
 
-// // // =================== Qualification Tabs =======================
-const tabs = document.querySelectorAll("[data-target]"),
-tabs_contents = document.querySelectorAll("[data-content]")
-
-// Jika menekan education maka akan menampilkan bagian education saja (target)
-tabs.forEach(tab => {
-    tab.addEventListener("click", () => {
-        const target = document.querySelector(tab.dataset.target)
-
-        // Jika menekan "Work" maka bagian yang "Education" (qualification_active) akan dihapus dan hanya menampilkan yang work saja
-
-        tabs_contents.forEach(tab_content => {
-            tab_content.classList.remove("qualification_active")
-        })
-
-        // Nama dari qualification_active sesuai dengan yang di CSS
-
-        target.classList.add("qualification_active")
-
-        // Memberikan qualification_active pada tabs yang dipilih misal work dan digabung dengan css sehingga warna dari work akan menjadi biru ketika ditekan
-
-        tabs.forEach(tab => {
-            tab.classList.remove("qualification_active")
-        })
-        tab.classList.add("qualification_active")
-    })
-})
-
-// ================= Services Modal ======================
-const modal_views = document.querySelectorAll(".services_modal"),
-    modal_buttons = document.querySelectorAll(".services_button"),
-    modal_closes = document.querySelectorAll(".services_modal-close")
-
-// Nama dari active-modal harus sesuai dengan nama yang di CSS-nya
-// Ketika modal dijalankan maka akan menambahkan classlist active-modal yang terdapat di CSS sehingga akan menampilkan macam-macam dari services modal
-let modal = function(modal_click){
-    modal_views[modal_click].classList.add("active-modal")
-}
-
-// Jika modal_button diklik maka akan menjalankan let modal
-modal_buttons.forEach((modal_button, i) => {
-    modal_button.addEventListener("click", () => {
-        modal(i)
-    })
-})
-
-// Ketika tombol (x) ditekan maka classList active-modal dihapus sehingga tidak menampilkan lagi macam-macam dari services modal
-modal_closes.forEach((modal_close) => {
-    modal_close.addEventListener("click", ()=>{
-        modal_views.forEach((modal_view) => {
-            modal_view.classList.remove("active-modal")
-        })
-    })
-})
-
 // =================== Portfolio Swiper =====================
 let swiper_portfolio = new Swiper(".portfolio_container", {
     cssMode: true,
@@ -126,32 +70,6 @@ let swiper_portfolio = new Swiper(".portfolio_container", {
       clickable: true,
     },
 });
-
-// ================== Testimonial Swiper ======================
-// grapcursor = cursornya berubah jadi grap sedangkan jika grab aja cursornya tetap namun tetap dapat memegang item
-// Loop berarti jika sudah habis maka kembali ke awal lagi
-// breakpoints (tulisannya harus benar karena fungsi ini terdapat pada swiper-bundle-js) 568 berarti jika lebih dari atau sama dengan 568 maka slidesPerviewnya akan terbagi menjadi dua
-
-let swiper_testimonial = new Swiper(".testimonial_container", {
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 48,
-
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
-    breakpoints: {
-        568:{
-            slidesPerView: 2,
-        }
-    }
-});
-
-
-
-
 
 // ============== Scroll section active link ==================
 // Didapat dari github
