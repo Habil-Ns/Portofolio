@@ -251,12 +251,6 @@ cursor: pointer;
     font-size: 1.2rem;
 }
 
-.nav_img{
-    width: 30px;
-    height: 30px;
-}
-
-
 .nav_close{
     position: absolute;
     right: 1.3rem;
@@ -1268,7 +1262,6 @@ input:-webkit-autofill:active{
 
     .nav_icon,
     .nav_close,
-    .nav_img,
     .nav_toggle{
         display: none;
     }
