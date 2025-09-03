@@ -2,1014 +2,999 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <!-- {{-- =============== Logo =========================== --}} -->
-    <link rel="shortcut icon" href="images/design.png" type="image/x-icon">
+  <!-- {{-- =============== Logo =========================== --}} -->
+  <link rel="shortcut icon" href="images/design.png" type="image/x-icon">
 
-    <!--================ Swiper CSS ===================== -->
-    <link rel="stylesheet" href="swiper-bundle.min.css">
+  <!--================ Swiper CSS ===================== -->
+  <link rel="stylesheet" href="swiper-bundle.min.css">
 
 
-    <!--=================== CSS ==========================-->
-    <link rel="stylesheet" href="style.css">
+  <!--=================== CSS ==========================-->
+  <link rel="stylesheet" href="style.css">
 
-    <!--================= UNICONS ======================-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!--================= UNICONS ======================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <title>My Portfolio</title>
+  <title>My Portfolio</title>
 </head>
 
 <body>
 
-    <!--=========================== Header ======================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#">
-                <img src="images/logo.png" alt="Noitusan" class="nav_logo">
+  <!--=========================== Header ======================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#">
+        <img src="images/logo.png" alt="Noitusan" class="nav_logo">
+      </a>
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list grid">
+          <li class="nav_item">
+            <a href="#home" class="nav_link active-link">
+              <i class="uil uil-estate nav_icon"></i> Home
             </a>
-            <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list grid">
-                    <li class="nav_item">
-                        <a href="#home" class="nav_link active-link">
-                            <i class="uil uil-estate nav_icon"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#about" class="nav_link">
-                            <i class="uil uil-user nav_icon"></i> About
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#portfolio" class="nav_link">
-                            <i class="uil uil-scenery nav_icon"></i> Portfolio
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#skills" class="nav_link">
-                            <i class="uil uil-desktop-alt nav_icon"></i>Skills
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#certificates" class="nav_link">
-                            <i class="uil uil-file-bookmark-alt nav_icon"></i> Certificates
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#contact" class="nav_link">
-                            <i class="uil uil-message nav_icon"></i> Contact
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-times nav_close" id="nav-close"></i>
+          </li>
+          <li class="nav_item">
+            <a href="#about" class="nav_link">
+              <i class="uil uil-user nav_icon"></i> About
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#portfolio" class="nav_link">
+              <i class="uil uil-scenery nav_icon"></i> Portfolio
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#skills" class="nav_link">
+              <i class="uil uil-desktop-alt nav_icon"></i>Skills
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#certificates" class="nav_link">
+              <i class="uil uil-file-bookmark-alt nav_icon"></i> Certificates
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#contact" class="nav_link">
+              <i class="uil uil-message nav_icon"></i> Contact
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-times nav_close" id="nav-close"></i>
+      </div>
+      <div class="nav_btns">
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--================ Main =====================-->
+  <main class="main">
+    <!--================ Home =======================-->
+    <section class="home section" id="home">
+      <div class="home_container container">
+        <div class="home_content">
+          <div class="home_data home_profile">
+            <h1 class="home_title home_name_one">Habil</h1>
+            <h2 class="home_subtitle">Fullstack Developer</h2>
+            <a href="#contact" class="button botton-flex button-background"> Contact Me
+              <i class="uil uil-message button_icon"></i>
+            </a>
+          </div>
+          <div class="home_image">
+            <img src="images/me_anime.png" alt="My Profile" class="home_img">
+          </div>
+          <div class="home_data home_about">
+            <h1 class="home_title home_name_two">Nasution</h1>
+            <p class="home_description">
+              I am a graduate of USK University with a passion for crafting engaging websites and mobile applications
+              designed to help businesses effectively market their products and services.
+            </p>
+
+            <a href="#education" class="button botton-flex">Personal Journey
+              <i class="uil uil-user button_icon"></i>
+            </a>
+
+
+          </div>
+        </div>
+
+        <!-- Tulisan scroll down -->
+        <div class="home_scroll">
+          <a href="#about" class="home_scroll-button button-flex">
+            <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+            <span class="home_scroll-name">Scroll down</span>
+            <i class="uil uil-arrow-down home_scroll-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--=================== About ====================-->
+    <section class="about section" id="about">
+      <h2 class="section_title">About Me</h2>
+      <span class="section_subtitle">My Introduction</span>
+      <div class="about_container container grid">
+        <div class="about_images">
+          <img src="images/programmer_remover.png" alt="Human" class="about_img">
+        </div>
+        <div class="about_data">
+          <div class="about_description">
+            <p>I am a skilled developer with experience building various projects, including websites and
+              mobile applications. I am proficient in using multiple programming languages, such as Java,
+              Python, and JavaScript, and frameworks like React Native and Next.js. I also have experience
+              in cloud computing (AWS, GCP) and containerization (Docker) for building scalable solutions.
+            </p>
+            <br>
+            <p> Outside of coding, I am also passionate about learning new things. I am always looking for
+              new challenges and exploring emerging technologies.</p>
+            <br>
+
+          </div>
+          <div class="about_info">
+            <div>
+              <span class="about_info-title">04+</span>
+              <span class="about_info-name">Year <br> experience</span>
             </div>
-            <div class="nav_btns">
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
-                <div class="nav_toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
+            <div>
+              <span class="about_info-title">10+</span>
+              <span class="about_info-name">Completed <br> project</span>
             </div>
-        </nav>
-    </header>
+          </div>
+          <div class="about_buttons">
+            <a download="" href="CV.pdf" class="button button-flex button-background">
+              Download CV <i class="uil uil-download-alt button_icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!--================ Main =====================-->
-    <main class="main">
-        <!--================ Home =======================-->
-        <section class="home section" id="home">
-            <div class="home_container container">
-                <div class="home_content">
-                    <div class="home_data home_profile">
-                        <h1 class="home_title home_name_one">Habil</h1>
-                        <h2 class="home_subtitle">Fullstack Developer</h2>
-                        <a href="#contact" class="button botton-flex button-background"> Contact Me
-                            <i class="uil uil-message button_icon"></i>
-                        </a>
-                    </div>
-                    <div class="home_image">
-                        <img src="images/me_anime.png" alt="My Profile" class="home_img">
-                    </div>
-                    <div class="home_data home_about">
-                        <h1 class="home_title home_name_two">Nasution</h1>
-                        <p class="home_description">
-                        I am a graduate of USK University with a passion for crafting engaging websites and mobile applications designed to help businesses effectively market their products and services.
-                        </p>
+    <!--===================== Portfolio ==================-->
+    <section class="portfolio section" id="portfolio">
+      <h2 class="section_title">Portfolio</h2>
+      <span class="section_subtitle">Most Recent Work</span>
 
-                        <a href="#education" class="button botton-flex">Personal Journey
-                            <i class="uil uil-user button_icon"></i>
-                        </a>
+      <div class="portfolio_container container swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="portfolio_content grid swiper-slide">
+            <article class="pf-card">
+              <div class="pf-media">
+                <img src="images/repflai-website.png" alt="Repflai website preview" class="pf-image" loading="lazy">
+              </div>
+              <div class="pf-body">
+                <h3 class="pf-title">Repflai</h3>
 
-                          
-                    </div>
+                <p class="pf-desc">
+                  AI-powered flashcard app with OCR & spaced repetition
+                </p>
+                <div class="pf-tags">
+                  <span class="tag">Next.js</span><span class="tag">Python</span><span class="tag">Cloud Run</span><span
+                    class="tag">PostgreSQL</span><span class="tag">AI & OCR</span>
                 </div>
-
-                <!-- Tulisan scroll down -->
-                <div class="home_scroll">
-                    <a href="#about" class="home_scroll-button button-flex">
-                        <i class="uil uil-mouse-alt home_scroll-mouse"></i>
-                        <span class="home_scroll-name">Scroll down</span>
-                        <i class="uil uil-arrow-down home_scroll-arrow"></i>
-                    </a>
+                <div class="pf-actions">
+                  <a href="https://repflai.vercel.app/" target="_blank" rel="noopener" class="btn btn--ghost">
+                    <i class="uil uil-globe"></i> Live
+                  </a>
+                  <a href="https://github.com/Noitusanx/repflai-app" target="_blank" rel="noopener"
+                    class="btn btn--ghost">
+                    <i class="uil uil-github"></i> Repo
+                  </a>
                 </div>
+            </article>
+          </div>
+
+
+          <div class="portfolio_content grid swiper-slide">
+            <article class="pf-card">
+              <div class="pf-media">
+                <img src="images/tcc-website.png" alt="TCC website preview" class="pf-image" loading="lazy">
+              </div>
+              <div class="pf-body">
+                <h3 class="pf-title">Competitive Programming Training Website</h3>
+                <p class="pf-desc">
+                  Web platform to create coding problems and practice problem-solving.
+                </p>
+                <div class="pf-tags">
+                  <span class="tag">Next.js</span><span class="tag">Tailwind</span><span class="tag">Frontend</span>
+                </div>
+                <div class="pf-actions">
+                  <a href="https://tcc-fadhrr.vercel.app/" target="_blank" rel="noopener" class="btn btn--ghost">
+                    <i class="uil uil-globe"></i> Live
+                  </a>
+                  <a href="https://github.com/fadhrr/TCC-Frontend" target="_blank" rel="noopener"
+                    class="btn btn--ghost">
+                    <i class="uil uil-github"></i> Repo
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="portfolio_content grid swiper-slide">
+            <article class="pf-card">
+              <div class="pf-media">
+                <img src="images/cultivitea.jpeg" alt="Cultivitea app preview" class="pf-image" loading="lazy">
+              </div>
+              <div class="pf-body">
+                <h3 class="pf-title">Cultivitea</h3>
+                <p class="pf-desc">
+                  Tea-plant disease detection (ML) with farmer education features
+                </p>
+                <div class="pf-tags">
+                  <span class="tag">JavaScript</span><span class="tag">Cloud Run</span><span
+                    class="tag">Firebase</span><span class="tag">Artifact Registry</span>
+                </div>
+                <div class="pf-actions">
+                  <a href="https://github.com/Noitusanx/cultivitea" target="_blank" rel="noopener"
+                    class="btn btn--ghost">
+                    <i class="uil uil-github"></i> Repo
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="portfolio_content grid swiper-slide">
+            <article class="pf-card">
+              <div class="pf-media">
+                <img src="images/traveed.png" alt="Traveed app preview" class="pf-image" loading="lazy">
+              </div>
+              <div class="pf-body">
+                <h3 class="pf-title">Traveed</h3>
+                <p class="pf-desc">
+                  Expense tracker with AI features
+                </p>
+                <div class="pf-tags">
+                  <span class="tag">Next.js</span><span class="tag">Paddle Payment Gateway</span>
+                </div>
+                <div class="pf-actions">
+                  <a href="https://traveed.app/" target="_blank" rel="noopener" class="btn btn--ghost">
+                    <i class="uil uil-globe"></i> Live
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="portfolio_content grid swiper-slide">
+            <article class="pf-card">
+              <div class="pf-media">
+                <img src="images/psychology.png" alt="Psychology website preview" class="pf-image" loading="lazy">
+              </div>
+              <div class="pf-body">
+                <h3 class="pf-title">Psychology Website</h3>
+                <p class="pf-desc">
+                  Services info & appointment booking for a psychology clinic.
+                </p>
+                <div class="pf-tags">
+                  <span class="tag">React.js</span><span class="tag">Tailwind</span>
+                </div>
+                <div class="pf-actions">
+                  <a href="https://edukasiceria.vercel.app/" target="_blank" rel="noopener" class="btn btn--ghost">
+                    <i class="uil uil-globe"></i> Live
+                  </a>
+                  <a href="https://github.com/Noitusanx/edukasi-ceria-praktik-psikolog" target="_blank" rel="noopener"
+                    class="btn btn--ghost">
+                    <i class="uil uil-github"></i> Repo
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="portfolio_content grid swiper-slide">
+            <article class="pf-card">
+              <div class="pf-media">
+                <img src="images/nepthune.png" alt="Nepthune website preview" class="pf-image" loading="lazy">
+              </div>
+              <div class="pf-body">
+                <h3 class="pf-title">Nepthune</h3>
+                <p class="pf-desc">
+                  Item-donation website
+                </p>
+                <div class="pf-tags">
+                  <span class="tag">Next.js</span><span class="tag">Tailwind</span>
+                </div>
+                <div class="pf-actions">
+                  <a href="https://nepthune.vercel.app/" target="_blank" rel="noopener" class="btn btn--ghost">
+                    <i class="uil uil-globe"></i> Live
+                  </a>
+                  <a href="https://github.com/alfnsnff/Nepthune" target="_blank" rel="noopener" class="btn btn--ghost">
+                    <i class="uil uil-github"></i> Repo
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="portfolio_content grid swiper-slide">
+            <article class="pf-card">
+              <div class="pf-media">
+                <img src="images/portfolio_peta.png" alt="PETA tour guide booking preview" class="pf-image"
+                  loading="lazy">
+              </div>
+              <div class="pf-body">
+                <h3 class="pf-title">PETA — Tour Guide Booking</h3>
+                <p class="pf-desc">
+                  A website that helps tourists find and book local tour guides.
+                </p>
+                <div class="pf-tags">
+                  <span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">Bootstrap</span>
+                </div>
+                <div class="pf-actions">
+                  <a href="https://github.com/Habil-Ns/INF206-2023-2-PETA" target="_blank" rel="noopener"
+                    class="btn btn--ghost">
+                    <i class="uil uil-github"></i> Repo
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="portfolio_content grid swiper-slide">
+            <article class="pf-card">
+              <div class="pf-media">
+                <img src="images/portfolio_catatyuk.jpg" alt="Catat Yuk! Android note-taking app preview"
+                  class="pf-image" loading="lazy">
+              </div>
+              <div class="pf-body">
+                <h3 class="pf-title">Catat Yuk!</h3>
+                <p class="pf-desc">
+                  Android note-taking app with create, edit, and delete features.
+                </p>
+                <div class="pf-tags">
+                  <span class="tag">Android</span><span class="tag">Java</span><span class="tag">Mobile</span>
+                </div>
+                <div class="pf-actions">
+                  <a href="https://github.com/Noitusanx/Catat-Yuk" target="_blank" rel="noopener"
+                    class="btn btn--ghost">
+                    <i class="uil uil-github"></i> Repo
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="portfolio_content grid swiper-slide">
+            <article class="pf-card">
+              <div class="pf-media">
+                <img src="images/umkm.png" alt="SME Marketplace website preview" class="pf-image" loading="lazy">
+              </div>
+              <div class="pf-body">
+                <h3 class="pf-title">UMKM Marketplace</h3>
+                <p class="pf-desc">
+                  Product catalog with WhatsApp ordering
+                </p>
+                <div class="pf-tags">
+                  <span class="tag">React.js</span><span class="tag">Tailwind</span>
+                </div>
+                <div class="pf-actions">
+                  <a href="https://gwm-stat-marketplace.com/" target="_blank" rel="noopener" class="btn btn--ghost">
+                    <i class="uil uil-globe"></i> Live
+                  </a>
+                  <a href="https://github.com/Noitusanx/gwm" target="_blank" rel="noopener" class="btn btn--ghost">
+                    <i class="uil uil-github"></i> Repo
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="portfolio_content grid swiper-slide">
+            <article class="pf-card">
+              <div class="pf-media">
+                <img src="images/portfolio_coffeeshop.png" alt="Coffee Shop marketing site preview" class="pf-image"
+                  loading="lazy">
+              </div>
+              <div class="pf-body">
+                <h3 class="pf-title">Coffee Shop</h3>
+                <p class="pf-desc">
+                  Marketing website for a coffee business with product highlights and CTAs.
+                </p>
+                <div class="pf-tags">
+                  <span class="tag">React</span><span class="tag">Vercel</span><span class="tag">Landing</span>
+                </div>
+                <div class="pf-actions">
+                  <a href="https://github.com/Noitusanx/Coffee-Shop" target="_blank" rel="noopener"
+                    class="btn btn--ghost">
+                    <i class="uil uil-github"></i> Repo
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"><i class="uil uil-angle-right-b swiper_portfolio-icon"></i></div>
+        <div class="swiper-button-prev"><i class="uil uil-angle-left-b swiper_portfolio-icon"></i></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+    <!--===================== Skills ====================-->
+    <section class="skills section" id="skills">
+      <h2 class="section_title">Skills</h2>
+      <span class="section_subtitle">My Technical Level</span>
+
+      <div class="skills_container container grid">
+
+        <!-- Languages -->
+        <div class="skills_content">
+          <div class="skills_header">
+            <i class="uil uil-brackets-curly skills_icon"></i>
+            <div>
+              <h1 class="skills_title">Programming Languages</h1>
+              <span class="skills_subtitle">Core languages for backend & problem-solving</span>
             </div>
-        </section>
-
-        <!--=================== About ====================-->
-        <section class="about section" id="about">
-            <h2 class="section_title">About Me</h2>
-            <span class="section_subtitle">My Introduction</span>
-            <div class="about_container container grid">
-                <div class="about_images">
-                    <img src="images/programmer_remover.png" alt="Human" class="about_img">
-                </div>
-                <div class="about_data">
-                    <div class="about_description">
-                        <p>I am a skilled developer with experience building various projects, including websites and
-                            mobile applications. I am proficient in using multiple programming languages, such as Java,
-                            Python, and JavaScript, and frameworks like React Native and Next.js. I also have experience
-                            in cloud computing (AWS, GCP) and containerization (Docker) for building scalable solutions.
-                        </p>
-                        <br>
-                        <p> Outside of coding, I am also passionate about learning new things. I am always looking for
-                            new challenges and exploring emerging technologies.</p>
-                        <br>
-                      
-                    </div>
-                    <div class="about_info">
-                        <div>
-                            <span class="about_info-title">04+</span>
-                            <span class="about_info-name">Year <br> experience</span>
-                        </div>
-                        <div>
-                            <span class="about_info-title">10+</span>
-                            <span class="about_info-name">Completed <br> project</span>
-                        </div>
-                    </div>
-                    <div class="about_buttons">
-                        <a download="" href="CV.pdf" class="button button-flex button-background">
-                            Download CV <i class="uil uil-download-alt button_icon"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--===================== Portfolio ==================-->
-       <section class="portfolio section" id="portfolio">
-            <h2 class="section_title">Portfolio</h2>
-            <span class="section_subtitle">Most Recent Work</span>
-
-            <div class="portfolio_container container swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="portfolio_content grid swiper-slide">
-                    <article class="pf-card">
-                    <div class="pf-media">
-                        <img src="images/repflai-website.png" alt="Repflai website preview" class="pf-image" loading="lazy">
-                    </div>
-                    <div class="pf-body">
-                        <h3 class="pf-title">Repflai</h3>
-
-                        <p class="pf-desc">
-                        AI-powered flashcard app with OCR & spaced repetition
-                        </p>
-                        <div class="pf-tags">
-                        <span class="tag">Next.js</span><span class="tag">Python</span><span class="tag">Cloud Run</span><span class="tag">PostgreSQL</span><span class="tag">AI & OCR</span>
-                        </div>
-                        <div class="pf-actions">
-                        <a href="https://repflai.vercel.app/" target="_blank" rel="noopener" class="btn btn--ghost">
-                            <i class="uil uil-globe"></i> Live
-                        </a>
-                        <a href="https://github.com/Noitusanx/repflai-app" target="_blank" rel="noopener" class="btn btn--ghost">
-                            <i class="uil uil-github"></i> Repo
-                        </a>
-                    </div>
-                    </article>
-                </div>
-
-
-                <div class="portfolio_content grid swiper-slide">
-                    <article class="pf-card">
-                    <div class="pf-media">
-                        <img src="images/tcc-website.png" alt="TCC website preview" class="pf-image" loading="lazy">
-                    </div>
-                    <div class="pf-body">
-                        <h3 class="pf-title">Competitive Programming Training Website</h3>
-                        <p class="pf-desc">
-                        Web platform to create coding problems and practice problem-solving.
-                        </p>
-                        <div class="pf-tags">
-                        <span class="tag">Next.js</span><span class="tag">Tailwind</span><span class="tag">Frontend</span>
-                        </div>
-                        <div class="pf-actions">
-                            <a href="https://tcc-fadhrr.vercel.app/" target="_blank" rel="noopener" class="btn btn--ghost">
-                            <i class="uil uil-globe"></i> Live
-                        </a>
-                        <a href="https://github.com/fadhrr/TCC-Frontend" target="_blank" rel="noopener" class="btn btn--ghost">
-                            <i class="uil uil-github"></i> Repo
-                        </a>
-                        </div>
-                    </div>
-                    </article>
-                </div>
-                <div class="portfolio_content grid swiper-slide">
-                    <article class="pf-card">
-                    <div class="pf-media">
-                        <img src="images/cultivitea.jpeg" alt="Cultivitea app preview" class="pf-image" loading="lazy">
-                    </div>
-                    <div class="pf-body">
-                        <h3 class="pf-title">Cultivitea</h3>
-                        <p class="pf-desc">
-                        Tea-plant disease detection (ML) with farmer education features
-                        </p>
-                        <div class="pf-tags">
-                        <span class="tag">JavaScript</span><span class="tag">Cloud Run</span><span class="tag">Firebase</span><span class="tag">Artifact Registry</span>
-                        </div>
-                        <div class="pf-actions">
-                        <a href="https://github.com/Noitusanx/cultivitea" target="_blank" rel="noopener" class="btn btn--ghost">
-                            <i class="uil uil-github"></i> Repo
-                        </a>
-                        </div>
-                    </div>
-                    </article>
-                </div>
-                <div class="portfolio_content grid swiper-slide">
-                    <article class="pf-card">
-                    <div class="pf-media">
-                        <img src="images/traveed.png" alt="Traveed app preview" class="pf-image" loading="lazy">
-                    </div>
-                    <div class="pf-body">
-                        <h3 class="pf-title">Traveed</h3>
-                        <p class="pf-desc">
-                        Expense tracker with AI features
-                        </p>
-                        <div class="pf-tags">
-                        <span class="tag">Next.js</span><span class="tag">Paddle Payment Gateway</span>
-                        </div>
-                        <div class="pf-actions">
-                        <a href="https://traveed.app/" target="_blank" rel="noopener" class="btn btn--ghost">
-                            <i class="uil uil-globe"></i> Live
-                        </a>
-                        </div>
-                    </div>
-                    </article>
-                </div>
-                <div class="portfolio_content grid swiper-slide">
-                    <article class="pf-card">
-                    <div class="pf-media">
-                        <img src="images/psychology.png" alt="Psychology website preview" class="pf-image" loading="lazy">
-                    </div>
-                    <div class="pf-body">
-                        <h3 class="pf-title">Psychology Website</h3>
-                        <p class="pf-desc">
-                        Services info & appointment booking for a psychology clinic.
-                        </p>
-                        <div class="pf-tags">
-                        <span class="tag">React.js</span><span class="tag">Tailwind</span>
-                        </div>
-                        <div class="pf-actions">
-                        <a href="https://edukasiceria.vercel.app/" target="_blank" rel="noopener" class="btn btn--ghost">
-                            <i class="uil uil-globe"></i> Live
-                        </a>
-                        <a href="https://github.com/Noitusanx/edukasi-ceria-praktik-psikolog" target="_blank" rel="noopener" class="btn btn--ghost">
-                            <i class="uil uil-github"></i> Repo
-                        </a>
-                        </div>
-                    </div>
-                    </article>
-                </div>
-                <div class="portfolio_content grid swiper-slide">
-                    <article class="pf-card">
-                    <div class="pf-media">
-                        <img src="images/nepthune.png" alt="Nepthune website preview" class="pf-image" loading="lazy">
-                    </div>
-                    <div class="pf-body">
-                        <h3 class="pf-title">Nepthune</h3>
-                        <p class="pf-desc">
-                        Item-donation website
-                        </p>
-                        <div class="pf-tags">
-                        <span class="tag">Next.js</span><span class="tag">Tailwind</span>
-                        </div>
-                    <div class="pf-actions">
-                        <a href="https://nepthune.vercel.app/" target="_blank" rel="noopener" class="btn btn--ghost">
-                            <i class="uil uil-globe"></i> Live
-                        </a>
-                        <a href="https://github.com/alfnsnff/Nepthune" target="_blank" rel="noopener" class="btn btn--ghost">
-                            <i class="uil uil-github"></i> Repo
-                        </a>
-                        </div>
-                    </div>
-                    </article>
-                </div>
-
-                <div class="portfolio_content grid swiper-slide">
-                    <article class="pf-card">
-                    <div class="pf-media">
-                        <img src="images/portfolio_peta.png" alt="PETA tour guide booking preview" class="pf-image" loading="lazy">
-                    </div>
-                    <div class="pf-body">
-                        <h3 class="pf-title">PETA — Tour Guide Booking</h3>
-                        <p class="pf-desc">
-                        A website that helps tourists find and book local tour guides.
-                        </p>
-                        <div class="pf-tags">
-                        <span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">Bootstrap</span>
-                        </div>
-                        <div class="pf-actions">
-                        <a href="https://github.com/Habil-Ns/INF206-2023-2-PETA" target="_blank" rel="noopener" class="btn btn--ghost">
-                            <i class="uil uil-github"></i> Repo
-                        </a>
-                        </div>
-                    </div>
-                    </article>
-                </div>
-
-                <div class="portfolio_content grid swiper-slide">
-                    <article class="pf-card">
-                    <div class="pf-media">
-                        <img src="images/portfolio_catatyuk.jpg" alt="Catat Yuk! Android note-taking app preview" class="pf-image" loading="lazy">
-                    </div>
-                    <div class="pf-body">
-                        <h3 class="pf-title">Catat Yuk!</h3>
-                        <p class="pf-desc">
-                        Android note-taking app with create, edit, and delete features.
-                        </p>
-                        <div class="pf-tags">
-                        <span class="tag">Android</span><span class="tag">Java</span><span class="tag">Mobile</span>
-                        </div>
-                        <div class="pf-actions">
-                        <a href="https://github.com/Noitusanx/Catat-Yuk" target="_blank" rel="noopener" class="btn btn--ghost">
-                            <i class="uil uil-github"></i> Repo
-                        </a>
-                        </div>
-                    </div>
-                    </article>
-                </div>
-
-                <div class="portfolio_content grid swiper-slide">
-                    <article class="pf-card">
-                    <div class="pf-media">
-                        <img src="images/umkm.png" alt="SME Marketplace website preview" class="pf-image" loading="lazy">
-                    </div>
-                    <div class="pf-body">
-                        <h3 class="pf-title">UMKM Marketplace</h3>
-                        <p class="pf-desc">
-                        Product catalog with WhatsApp ordering
-                        </p>
-                        <div class="pf-tags">
-                        <span class="tag">React.js</span><span class="tag">Tailwind</span>
-                        </div>
-                    <div class="pf-actions">
-                        <a href="https://gwm-stat-marketplace.com/" target="_blank" rel="noopener" class="btn btn--ghost">
-                            <i class="uil uil-globe"></i> Live
-                        </a>
-                        <a href="https://github.com/Noitusanx/gwm" target="_blank" rel="noopener" class="btn btn--ghost">
-                            <i class="uil uil-github"></i> Repo
-                        </a>
-                        </div>
-                    </div>
-                    </article>
-                </div>
-
-                <div class="portfolio_content grid swiper-slide">
-                    <article class="pf-card">
-                    <div class="pf-media">
-                        <img src="images/portfolio_coffeeshop.png" alt="Coffee Shop marketing site preview" class="pf-image" loading="lazy">
-                    </div>
-                    <div class="pf-body">
-                        <h3 class="pf-title">Coffee Shop</h3>
-                        <p class="pf-desc">
-                        Marketing website for a coffee business with product highlights and CTAs.
-                        </p>
-                        <div class="pf-tags">
-                        <span class="tag">React</span><span class="tag">Vercel</span><span class="tag">Landing</span>
-                        </div>
-                    <div class="pf-actions">
-                        <a href="https://github.com/Noitusanx/Coffee-Shop" target="_blank" rel="noopener" class="btn btn--ghost">
-                            <i class="uil uil-github"></i> Repo
-                        </a>
-                        </div>
-                    </div>
-                    </article>
-                </div>
-                </div>
-
-                <div class="swiper-button-next"><i class="uil uil-angle-right-b swiper_portfolio-icon"></i></div>
-                <div class="swiper-button-prev"><i class="uil uil-angle-left-b swiper_portfolio-icon"></i></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
-
-
-        <!--===================== Skills ====================-->
-       <section class="skills section" id="skills">
-  <h2 class="section_title">Skills</h2>
-  <span class="section_subtitle">My Technical Level</span>
-
-  <div class="skills_container container grid">
-
-    <!-- Languages -->
-    <div class="skills_content">
-      <div class="skills_header">
-        <i class="uil uil-brackets-curly skills_icon"></i>
-        <div>
-          <h1 class="skills_title">Programming Languages</h1>
-          <span class="skills_subtitle">Core languages for backend & problem-solving</span>
-        </div>
-        <i class="uil uil-angle-down skills_arrow"></i>
-      </div>
-
-      <div class="skills_list grid">
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">Python</h3>
-            <span class="badge-level level-intermediate">Intermediate</span>
+            <i class="uil uil-angle-down skills_arrow"></i>
           </div>
-        </div>
-        
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">Java</h3>
-            <span class="badge-level level-intermediate">Intermediate</span>
-          </div>
-        </div>
-         <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">Golang</h3>
-            <span class="badge-level level-intermediate">Intermediate</span>
-          </div>
-        </div>
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">C</h3>
-            <span class="badge-level level-familiar">Familiar</span>
-          </div>
-        </div>
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">Kotlin</h3>
-            <span class="badge-level level-familiar">Familiar</span>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Frontend -->
-    <div class="skills_content skills_close">
-      <div class="skills_header">
-        <i class="uil uil-window skills_icon"></i>
-        <div>
-          <h1 class="skills_title">Frontend</h1>
-          <span class="skills_subtitle">UI engineering & app shells</span>
-        </div>
-        <i class="uil uil-angle-down skills_arrow"></i>
-      </div>
-
-      <div class="skills_list grid">
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">HTML</h3>
-            <span class="badge-level level-advanced">Advanced</span>
-          </div>
-        </div>
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">CSS (Bootstrap, Tailwind)</h3>
-            <span class="badge-level level-advanced">Advanced</span>
-          </div>
-        </div>
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">React.js</h3>
-            <span class="badge-level level-intermediate">Intermediate</span>
-          </div>
-        </div>
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">Next.js</h3>
-            <span class="badge-level level-intermediate">Intermediate</span>
-          </div>
-        </div>
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">React Native</h3>
-            <span class="badge-level level-familiar">Familiar</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Backend & APIs -->
-    <div class="skills_content skills_close">
-      <div class="skills_header">
-        <i class="uil uil-server-network-alt skills_icon"></i>
-        <div>
-          <h1 class="skills_title">Backend & APIs</h1>
-          <span class="skills_subtitle">API design, auth, and services</span>
-        </div>
-        <i class="uil uil-angle-down skills_arrow"></i>
-      </div>
-
-      <div class="skills_list grid">
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">Node.js (Express)</h3>
-            <span class="badge-level level-advanced">Advanced</span>
-          </div>
-        </div>
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">Python (FastAPI)</h3>
-            <span class="badge-level level-intermediate">Intermediate</span>
-          </div>
-        </div>
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">Laravel (PHP)</h3>
-            <span class="badge-level level-intermediate">Intermediate</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Cloud & DevOps -->
-    <div class="skills_content skills_close">
-      <div class="skills_header">
-        <i class="uil uil-cloud skills_icon"></i>
-        <div>
-          <h1 class="skills_title">Cloud & DevOps</h1>
-          <span class="skills_subtitle">Deployments, CI/CD, containers</span>
-        </div>
-        <i class="uil uil-angle-down skills_arrow"></i>
-      </div>
-
-      <div class="skills_list grid">
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">Google Cloud</h3>
-            <span class="badge-level level-intermediate">Intermediate</span>
-          </div>
-        </div>
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">Firebase</h3>
-            <span class="badge-level level-intermediate">Intermediate</span>
-          </div>
-        </div>
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">Docker</h3>
-            <span class="badge-level level-intermediate">Intermediate</span>
-          </div>
-        </div>
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">AWS</h3>
-            <span class="badge-level level-familiar">Familiar</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Databases -->
-    <div class="skills_content skills_close">
-      <div class="skills_header">
-        <i class="uil uil-database skills_icon"></i>
-        <div>
-          <h1 class="skills_title">Databases</h1>
-          <span class="skills_subtitle">Relational & NoSQL</span>
-        </div>
-        <i class="uil uil-angle-down skills_arrow"></i>
-      </div>
-
-      <div class="skills_list grid">
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">PostgreSQL / MySQL</h3>
-            <span class="badge-level level-intermediate">Intermediate</span>
-          </div>
-        </div>
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">MongoDB</h3>
-            <span class="badge-level level-intermediate">Intermediate</span>
-          </div>
-        </div>
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">Firebase (Firestore)</h3>
-            <span class="badge-level level-intermediate">Intermediate</span>
-          </div>
-        </div>
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">Elasticsearch</h3>
-            <span class="badge-level level-familiar">Familiar</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Design & Tools -->
-    <div class="skills_content skills_close">
-      <div class="skills_header">
-        <i class="uil uil-swatchbook skills_icon"></i>
-        <div>
-          <h1 class="skills_title">Design & Tools</h1>
-          <span class="skills_subtitle">Daily drivers</span>
-        </div>
-        <i class="uil uil-angle-down skills_arrow"></i>
-      </div>
-
-      <div class="skills_list grid">
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">Git & GitHub</h3>
-            <span class="badge-level level-advanced">Advanced</span>
-          </div>
-        </div>
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">Figma / Canva</h3>
-            <span class="badge-level level-intermediate">Intermediate</span>
-          </div>
-        </div>
-        <div class="skills_data">
-          <div class="skills_titles">
-            <h3 class="skills_name">Photoshop</h3>
-            <span class="badge-level level-familiar">Familiar</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-        <!--===================== Qualification ====================-->
-        <section class="qualification section" id="education">
-            <h2 class="section_title">Education</h2>
-            <span class="section_subtitle">My Personal Journey</span>
-
-            <div class="qualification_container container">
-                <div class="qualification_sections">
-                    <div class="qualification_content qualification_active" data-content id="education">
-                        <!-- ========= Qualification 1 =========-->
-                        <div class="qualification_data">
-                            <div>
-                                <h3 class="qualification_title">Information technology</h3>
-                                <span class="qualification_subtitle">USK — Indonesia </span>
-                                <div class="qualification_calender"><i class="uil uil-calendar-alt"></i> 2021 — 2025
-                                </div>
-                            </div>
-                            <div>
-                                <span class="qualification_rounder"></span>
-                                <span class="qualification_line"></span>
-                            </div>
-                        </div>
-
-                        <!-- ========= Qualification 2 =========-->
-                        <div class="qualification_data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification_rounder"></span>
-                                <span class="qualification_line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification_title">Cloud Computing</h3>
-                                <span class="qualification_subtitle">Bangkit Academy</span>
-                                <div class="qualification_calender"><i class="uil uil-calendar-alt"></i> 2024 — 2024
-                                </div>
-                            </div>
-                            <div>
-                            </div>
-                            <div>
-                                <span class="qualification_rounder"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== Certifications =================== -->
-        <section class="section certificates" id="certificates">
-            <div class="section-header">
-                <h2 class="section_title">Certificates</h2>
-                <p class="section_subtitle">Selected credentials & courses</p>
+          <div class="skills_list grid">
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">Python</h3>
+                <span class="badge-level level-intermediate">Intermediate</span>
+              </div>
             </div>
 
-
-            <div class="cert-grid container">
-
-                <a class="cert-card" href="https://www.dicoding.com/certificates/53XEY1DVKPRN" target="_blank" rel="noopener noreferrer"
-                data-issuer="Dicoding" aria-label="Belajar Dasar Pemrograman JavaScript — Dicoding">
-                <div class="cert-card__top">
-                    <img class="cert-card__icon" loading="lazy" alt="Dicoding" 
-                        src="https://www.google.com/s2/favicons?sz=64&domain=dicoding.com">
-                    <span class="cert-card__issuer">Dicoding</span>
-                </div>
-                <h3 class="cert-card__title">Belajar Dasar Pemrograman JavaScript</h3>
-                <span class="cert-card__cta">View credential →</span>
-                </a>
-
-                <a class="cert-card" href="https://www.dicoding.com/certificates/53XEY7M0RPRN" target="_blank" rel="noopener noreferrer"
-                data-issuer="Dicoding" aria-label="Belajar Dasar Pemrograman Web — Dicoding">
-                <div class="cert-card__top">
-                    <img class="cert-card__icon" loading="lazy" alt="Dicoding" 
-                        src="https://www.google.com/s2/favicons?sz=64&domain=dicoding.com">
-                    <span class="cert-card__issuer">Dicoding</span>
-                </div>
-                <h3 class="cert-card__title">Belajar Dasar Pemrograman Web</h3>
-                <span class="cert-card__cta">View credential →</span>
-                </a>
-
-                <a class="cert-card" href="https://www.dicoding.com/certificates/2VX3OMERVZYQ" target="_blank" rel="noopener noreferrer"
-                data-issuer="Dicoding" aria-label="Memulai Dasar Pemrograman untuk Menjadi Pengembang Software — Dicoding">
-                <div class="cert-card__top">
-                    <img class="cert-card__icon" loading="lazy" alt="Dicoding" 
-                        src="https://www.google.com/s2/favicons?sz=64&domain=dicoding.com">
-                    <span class="cert-card__issuer">Dicoding</span>
-                </div>
-                <h3 class="cert-card__title">Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
-                <span class="cert-card__cta">View credential →</span>
-                </a>
-
-                <a class="cert-card" href="https://www.dicoding.com/certificates/GRX5QW352Z0M" target="_blank" rel="noopener noreferrer"
-                data-issuer="Dicoding" aria-label="Memulai Dasar Pemrograman untuk Menjadi Pengembang Software — Dicoding">
-                <div class="cert-card__top">
-                    <img class="cert-card__icon" loading="lazy" alt="Dicoding" 
-                        src="https://www.google.com/s2/favicons?sz=64&domain=dicoding.com">
-                    <span class="cert-card__issuer">Dicoding</span>
-                </div>
-                <h3 class="cert-card__title">Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
-                <span class="cert-card__cta">View credential →</span>
-                </a>
-
-                <!-- Coursera -->
-                <a class="cert-card" href="https://coursera.org/share/fbb7d131839615803a2176a872b4f390" target="_blank" rel="noopener noreferrer"
-                data-issuer="Coursera" aria-label="Technical Support Fundamentals — Coursera">
-                <div class="cert-card__top">
-                    <img class="cert-card__icon" loading="lazy" alt="Coursera" 
-                        src="https://www.google.com/s2/favicons?sz=64&domain=coursera.org">
-                    <span class="cert-card__issuer">Coursera</span>
-                </div>
-                <h3 class="cert-card__title">Technical Support Fundamentals</h3>
-                <span class="cert-card__cta">View credential →</span>
-                </a>
-
-                <a class="cert-card" href="https://coursera.org/share/eaa844e20d30d985e22cf44b99f397ab" target="_blank" rel="noopener noreferrer"
-                data-issuer="Coursera" aria-label="The Bits and Bytes of Computer Networking — Coursera">
-                <div class="cert-card__top">
-                    <img class="cert-card__icon" loading="lazy" alt="Coursera" 
-                        src="https://www.google.com/s2/favicons?sz=64&domain=coursera.org">
-                    <span class="cert-card__issuer">Coursera</span>
-                </div>
-                <h3 class="cert-card__title">The Bits and Bytes of Computer Networking</h3>
-                <span class="cert-card__cta">View credential →</span>
-                </a>
-
-                <a class="cert-card" href="https://coursera.org/share/b566ecdaf624436600c7b6bed701b0a7" target="_blank" rel="noopener noreferrer"
-                data-issuer="Coursera" aria-label="System Administration and IT Infrastructure Services — Coursera">
-                <div class="cert-card__top">
-                    <img class="cert-card__icon" loading="lazy" alt="Coursera" 
-                        src="https://www.google.com/s2/favicons?sz=64&domain=coursera.org">
-                    <span class="cert-card__issuer">Coursera</span>
-                </div>
-                <h3 class="cert-card__title">System Administration and IT Infrastructure Services</h3>
-                <span class="cert-card__cta">View credential →</span>
-                </a>
-
-                <!-- Codepolitan -->
-                <a class="cert-card" href="https://www.codepolitan.com/c/4YJDHOP/" target="_blank" rel="noopener noreferrer"
-                data-issuer="Codepolitan" aria-label="ReactJS — Codepolitan">
-                <div class="cert-card__top">
-                    <img class="cert-card__icon" loading="lazy" alt="Codepolitan" 
-                        src="https://www.google.com/s2/favicons?sz=64&domain=codepolitan.com">
-                    <span class="cert-card__issuer">Codepolitan</span>
-                </div>
-                <h3 class="cert-card__title">ReactJS</h3>
-                <span class="cert-card__cta">View credential →</span>
-                </a>
-
-                <a class="cert-card" href="https://www.codepolitan.com/c/MKDJFFQ/" target="_blank" rel="noopener noreferrer"
-                data-issuer="Codepolitan" aria-label="Fullstack MEVN Shopping Cart — Codepolitan">
-                <div class="cert-card__top">
-                    <img class="cert-card__icon" loading="lazy" alt="Codepolitan" 
-                        src="https://www.google.com/s2/favicons?sz=64&domain=codepolitan.com">
-                    <span class="cert-card__issuer">Codepolitan</span>
-                </div>
-                <h3 class="cert-card__title">Fullstack MEVN Shopping Cart</h3>
-                <span class="cert-card__cta">View credential →</span>
-                </a>
-
-                <a class="cert-card" href="https://www.codepolitan.com/c/J0SWVB5/" target="_blank" rel="noopener noreferrer"
-                data-issuer="Codepolitan" aria-label="Implementasi Payment Gateway Indonesia Menggunakan Laravel — Codepolitan">
-                <div class="cert-card__top">
-                    <img class="cert-card__icon" loading="lazy" alt="Codepolitan" 
-                        src="https://www.google.com/s2/favicons?sz=64&domain=codepolitan.com">
-                    <span class="cert-card__issuer">Codepolitan</span>
-                </div>
-                <h3 class="cert-card__title">Implementasi Payment Gateway Indonesia Menggunakan Laravel</h3>
-                <span class="cert-card__cta">View credential →</span>
-                </a>
-
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">Java</h3>
+                <span class="badge-level level-intermediate">Intermediate</span>
+              </div>
             </div>
-            </section>
-
-
-
-
-        <!--===================== Contact Me =========================-->
-        <section class="contactme section" id="contact">
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="section_content">
-          <h2 class="section_title">Contact Me</h2>
-          <span class="section_subtitle">Get In Touch</span>
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">Golang</h3>
+                <span class="badge-level level-intermediate">Intermediate</span>
+              </div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">C</h3>
+                <span class="badge-level level-familiar">Familiar</span>
+              </div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">Kotlin</h3>
+                <span class="badge-level level-familiar">Familiar</span>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="contact_container container grid">
-          <!-- Left: Contact info -->
-          <div class="contact_panel">
-            <div class="contact_information">
-              <i class="uil uil-phone contact_icon" aria-hidden="true"></i>
+        <!-- Frontend -->
+        <div class="skills_content skills_close">
+          <div class="skills_header">
+            <i class="uil uil-window skills_icon"></i>
+            <div>
+              <h1 class="skills_title">Frontend</h1>
+              <span class="skills_subtitle">UI engineering & app shells</span>
+            </div>
+            <i class="uil uil-angle-down skills_arrow"></i>
+          </div>
+
+          <div class="skills_list grid">
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">HTML</h3>
+                <span class="badge-level level-advanced">Advanced</span>
+              </div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">CSS (Bootstrap, Tailwind)</h3>
+                <span class="badge-level level-advanced">Advanced</span>
+              </div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">React.js</h3>
+                <span class="badge-level level-intermediate">Intermediate</span>
+              </div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">Next.js</h3>
+                <span class="badge-level level-intermediate">Intermediate</span>
+              </div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">React Native</h3>
+                <span class="badge-level level-familiar">Familiar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend & APIs -->
+        <div class="skills_content skills_close">
+          <div class="skills_header">
+            <i class="uil uil-server-network-alt skills_icon"></i>
+            <div>
+              <h1 class="skills_title">Backend & APIs</h1>
+              <span class="skills_subtitle">API design, auth, and services</span>
+            </div>
+            <i class="uil uil-angle-down skills_arrow"></i>
+          </div>
+
+          <div class="skills_list grid">
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">Node.js (Express)</h3>
+                <span class="badge-level level-advanced">Advanced</span>
+              </div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">Python (FastAPI)</h3>
+                <span class="badge-level level-intermediate">Intermediate</span>
+              </div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">Laravel (PHP)</h3>
+                <span class="badge-level level-intermediate">Intermediate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud & DevOps -->
+        <div class="skills_content skills_close">
+          <div class="skills_header">
+            <i class="uil uil-cloud skills_icon"></i>
+            <div>
+              <h1 class="skills_title">Cloud & DevOps</h1>
+              <span class="skills_subtitle">Deployments, CI/CD, containers</span>
+            </div>
+            <i class="uil uil-angle-down skills_arrow"></i>
+          </div>
+
+          <div class="skills_list grid">
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">Google Cloud</h3>
+                <span class="badge-level level-intermediate">Intermediate</span>
+              </div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">Firebase</h3>
+                <span class="badge-level level-intermediate">Intermediate</span>
+              </div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">Docker</h3>
+                <span class="badge-level level-intermediate">Intermediate</span>
+              </div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">AWS</h3>
+                <span class="badge-level level-familiar">Familiar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skills_content skills_close">
+          <div class="skills_header">
+            <i class="uil uil-database skills_icon"></i>
+            <div>
+              <h1 class="skills_title">Databases</h1>
+              <span class="skills_subtitle">Relational & NoSQL</span>
+            </div>
+            <i class="uil uil-angle-down skills_arrow"></i>
+          </div>
+
+          <div class="skills_list grid">
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">PostgreSQL / MySQL</h3>
+                <span class="badge-level level-intermediate">Intermediate</span>
+              </div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">MongoDB</h3>
+                <span class="badge-level level-intermediate">Intermediate</span>
+              </div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">Firebase (Firestore)</h3>
+                <span class="badge-level level-intermediate">Intermediate</span>
+              </div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">Elasticsearch</h3>
+                <span class="badge-level level-familiar">Familiar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design & Tools -->
+        <div class="skills_content skills_close">
+          <div class="skills_header">
+            <i class="uil uil-swatchbook skills_icon"></i>
+            <div>
+              <h1 class="skills_title">Design & Tools</h1>
+              <span class="skills_subtitle">Daily drivers</span>
+            </div>
+            <i class="uil uil-angle-down skills_arrow"></i>
+          </div>
+
+          <div class="skills_list grid">
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">Git & GitHub</h3>
+                <span class="badge-level level-advanced">Advanced</span>
+              </div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">Figma / Canva</h3>
+                <span class="badge-level level-intermediate">Intermediate</span>
+              </div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">Photoshop</h3>
+                <span class="badge-level level-familiar">Familiar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!--===================== Qualification ====================-->
+    <section class="qualification section" id="education">
+      <h2 class="section_title">Education</h2>
+      <span class="section_subtitle">My Personal Journey</span>
+
+      <div class="qualification_container container">
+        <div class="qualification_sections">
+          <div class="qualification_content qualification_active" data-content id="education">
+            <!-- ========= Qualification 1 =========-->
+            <div class="qualification_data">
               <div>
-                <h3 class="contact_title">Call Me</h3>
-                <span class="contact_subtitle">+62 812-6537-5989</span>
+                <h3 class="qualification_title">Informatics</h3>
+                <span class="qualification_subtitle">Universitas Syiah Kuala — Indonesia</span>
+                <div class="qualification_calender"><i class="uil uil-calendar-alt"></i> 2021 — 2025</div>
+              </div>
+              <div>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
               </div>
             </div>
 
-            <div class="contact_information">
-              <i class="uil uil-envelope contact_icon" aria-hidden="true"></i>
-              <div>
-                <h3 class="contact_title">Email</h3>
-                <span class="contact_subtitle">habilnasutionx@gmail.com</span>
-              </div>
-            </div>
+            <!-- ========= Qualification 2 =========-->
+            <div class="qualification_data">
+              <div></div>
 
-            <div class="contact_information">
-              <i class="uil uil-location-pin-alt contact_icon" aria-hidden="true"></i>
               <div>
-                <h3 class="contact_title">Location</h3>
-                <span class="contact_subtitle">Atjeh - Indonesia</span>
+                <span class="qualification_rounder"></span>
+                <span class="qualification_line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification_title">Cloud Computing</h3>
+                <span class="qualification_subtitle">Bangkit Academy</span>
+                <div class="qualification_calender"><i class="uil uil-calendar-alt"></i> 2024 — 2024
+                </div>
+              </div>
+              <div>
+              </div>
+              <div>
+                <span class="qualification_rounder"></span>
               </div>
             </div>
           </div>
-
-          <!-- Right: Form -->
-          <form
-            action="https://api.web3forms.com/submit"
-            method="POST"
-            class="contact_form grid"
-            aria-label="Contact form"
-          >
-            <input type="hidden" name="access_key" value="0e6fddb1-dde9-4bec-9868-5057c473bff3" />
-            <!-- Optional Web3Forms extras -->
-            <input type="hidden" name="subject" value="New contact from portfolio" />
-            <input type="hidden" name="from_name" value="Portfolio Contact" />
-            <input type="checkbox" name="botcheck" class="hidden" style="display:none;" tabindex="-1" autocomplete="off" />
-
-            <div class="contact_inputs grid">
-              <div class="contact_content">
-                <label class="contact_label" for="name">Name</label>
-                <input
-                  id="name"
-                  type="text"
-                  name="name"
-                  class="contact_input"
-                  placeholder="Your full name"
-                  autocomplete="name"
-                  required
-                />
-              </div>
-
-              <div class="contact_content">
-                <label class="contact_label" for="email">Email</label>
-                <input
-                  id="email"
-                  type="email"
-                  name="email"
-                  class="contact_input"
-                  placeholder="email@domain.com"
-                  autocomplete="email"
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="contact_content">
-              <label class="contact_label" for="project">Project</label>
-              <input
-                id="project"
-                type="text"
-                name="project"
-                class="contact_input"
-                placeholder="e.g. Build a landing page, integrate payment, etc."
-                required
-              />
-            </div>
-
-            <div class="contact_content">
-              <label class="contact_label" for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="7"
-                class="contact_input"
-                placeholder="Tell me about your goals, timeline, and budget (optional)."
-                required
-              ></textarea>
-            </div>
-
-            <div class="captcha_row">
-              <div class="h-captcha" data-captcha="true"></div>
-            </div>
-
-            <div class="submit_button">
-              <button type="submit" class="button button-flex button_send">
-                Send Message
-                <i class="uil uil-message button_icon" aria-hidden="true"></i>
-              </button>
-            </div>
-
-            <!-- Optional: success/error message placeholders -->
-            <p class="form_hint" aria-live="polite"></p>
-          </form>
         </div>
       </div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-</section>
+    </section>
 
-    </main>
-
-    <!-- ====================== Footer ======================= -->
-   <footer class="footer">
-  <div class="footer_bg">
-    <div class="footer_container container grid">
-      <!-- Branding -->
-      <div>
-        <h1 class="footer_title">Habil Nasution</h1>
-        <span class="footer_subtitle">Fullstack Developer</span>
+    <!-- ==================== Certifications =================== -->
+    <section class="section certificates" id="certificates">
+      <div class="section-header">
+        <h2 class="section_title">Certificates</h2>
+        <p class="section_subtitle">Selected credentials & courses</p>
       </div>
 
-      <!-- Links -->
-      <ul class="footer_links">
-        <li><a href="#portfolio" class="footer_link">Portfolio</a></li>
-        <li><a href="#skills" class="footer_link">Skills</a></li>
-        <li><a href="#contact" class="footer_link">Contact</a></li>
-      </ul>
+      <div class="cert-grid container">
 
-      <!-- Socials -->
-      <div class="footer_socials" aria-label="Social media links">
-        <a href="https://www.linkedin.com/in/habilnasution/" class="footer_social"
-           target="_blank" rel="noopener" aria-label="LinkedIn">
-          <img src="images/linkedin.svg" alt="" class="footer_img" />
+        <!-- Coursera -->
+        <a class="cert-card" href="https://coursera.org/verify/professional-cert/HYS3DYONVDVZ" target="_blank"
+          rel="noopener noreferrer" data-issuer="Coursera"
+          aria-label="Google Cybersecurity Professional Certificate — Coursera">
+          <div class="cert-card__top">
+            <img class="cert-card__icon" loading="lazy" alt="Coursera"
+              src="https://www.google.com/s2/favicons?sz=64&domain=coursera.org">
+            <span class="cert-card__issuer">Coursera</span>
+          </div>
+          <h3 class="cert-card__title">Google Cybersecurity Professional Certificate</h3>
+          <span class="cert-card__cta">View credential →</span>
         </a>
-         <a href="https://github.com/Noitusanx" class="footer_social"
-     target="_blank" rel="noopener" aria-label="GitHub">
-    <img src="images/github.svg" alt="GitHub" class="footer_img" />
+
+        <a class="cert-card" href="https://coursera.org/verify/professional-cert/EQYUXMH4AEEJ" target="_blank"
+          rel="noopener noreferrer" data-issuer="Coursera"
+          aria-label="Google IT Support Professional Certificate — Coursera">
+          <div class="cert-card__top">
+            <img class="cert-card__icon" loading="lazy" alt="Coursera"
+              src="https://www.google.com/s2/favicons?sz=64&domain=coursera.org">
+            <span class="cert-card__issuer">Coursera</span>
+          </div>
+          <h3 class="cert-card__title">Google IT Support Professional Certificate</h3>
+          <span class="cert-card__cta">View credential →</span>
+        </a>
+
+        <!-- Dicoding -->
+        <a class="cert-card" href="https://www.dicoding.com/certificates/KEXL10J1RXG2" target="_blank"
+          rel="noopener noreferrer" data-issuer="Dicoding" aria-label="Menjadi Google Cloud Engineer — Dicoding">
+          <div class="cert-card__top">
+            <img class="cert-card__icon" loading="lazy" alt="Dicoding"
+              src="https://www.google.com/s2/favicons?sz=64&domain=dicoding.com">
+            <span class="cert-card__issuer">Dicoding</span>
+          </div>
+          <h3 class="cert-card__title">Menjadi Google Cloud Engineer</h3>
+          <span class="cert-card__cta">View credential →</span>
+        </a>
+
+        <a class="cert-card" href="https://www.dicoding.com/certificates/JMZV3DJG3PN9" target="_blank"
+          rel="noopener noreferrer" data-issuer="Dicoding"
+          aria-label="Belajar Penerapan Machine Learning dengan Google Cloud — Dicoding">
+          <div class="cert-card__top">
+            <img class="cert-card__icon" loading="lazy" alt="Dicoding"
+              src="https://www.google.com/s2/favicons?sz=64&domain=dicoding.com">
+            <span class="cert-card__issuer">Dicoding</span>
+          </div>
+          <h3 class="cert-card__title">Belajar Penerapan Machine Learning dengan Google Cloud</h3>
+          <span class="cert-card__cta">View credential →</span>
+        </a>
+
+        <a class="cert-card" href="https://www.dicoding.com/certificates/53XEY1DVKPRN" target="_blank"
+          rel="noopener noreferrer" data-issuer="Dicoding" aria-label="Belajar Dasar Pemrograman JavaScript — Dicoding">
+          <div class="cert-card__top">
+            <img class="cert-card__icon" loading="lazy" alt="Dicoding"
+              src="https://www.google.com/s2/favicons?sz=64&domain=dicoding.com">
+            <span class="cert-card__issuer">Dicoding</span>
+          </div>
+          <h3 class="cert-card__title">Belajar Dasar Pemrograman JavaScript</h3>
+          <span class="cert-card__cta">View credential →</span>
+        </a>
+
+        <a class="cert-card" href="https://www.dicoding.com/certificates/2VX3OMERVZYQ" target="_blank"
+          rel="noopener noreferrer" data-issuer="Dicoding"
+          aria-label="Memulai Dasar Pemrograman untuk Menjadi Pengembang Software — Dicoding">
+          <div class="cert-card__top">
+            <img class="cert-card__icon" loading="lazy" alt="Dicoding"
+              src="https://www.google.com/s2/favicons?sz=64&domain=dicoding.com">
+            <span class="cert-card__issuer">Dicoding</span>
+          </div>
+          <h3 class="cert-card__title">Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
+          <span class="cert-card__cta">View credential →</span>
+        </a>
+
+        <a class="cert-card" href="https://www.dicoding.com/certificates/53XEY7M0RPRN" target="_blank"
+          rel="noopener noreferrer" data-issuer="Dicoding" aria-label="Belajar Dasar Pemrograman Web — Dicoding">
+          <div class="cert-card__top">
+            <img class="cert-card__icon" loading="lazy" alt="Dicoding"
+              src="https://www.google.com/s2/favicons?sz=64&domain=dicoding.com">
+            <span class="cert-card__issuer">Dicoding</span>
+          </div>
+          <h3 class="cert-card__title">Belajar Dasar Pemrograman Web</h3>
+          <span class="cert-card__cta">View credential →</span>
+        </a>
+
+        <!-- Codepolitan -->
+        <a class="cert-card" href="https://www.codepolitan.com/c/4YJDHOP/" target="_blank" rel="noopener noreferrer"
+          data-issuer="Codepolitan" aria-label="ReactJS — Codepolitan">
+          <div class="cert-card__top">
+            <img class="cert-card__icon" loading="lazy" alt="Codepolitan"
+              src="https://www.google.com/s2/favicons?sz=64&domain=codepolitan.com">
+            <span class="cert-card__issuer">Codepolitan</span>
+          </div>
+          <h3 class="cert-card__title">ReactJS</h3>
+          <span class="cert-card__cta">View credential →</span>
+        </a>
+
+        <a class="cert-card" href="https://www.codepolitan.com/c/MKDJFFQ/" target="_blank" rel="noopener noreferrer"
+          data-issuer="Codepolitan" aria-label="Fullstack MEVN Shopping Cart — Codepolitan">
+          <div class="cert-card__top">
+            <img class="cert-card__icon" loading="lazy" alt="Codepolitan"
+              src="https://www.google.com/s2/favicons?sz=64&domain=codepolitan.com">
+            <span class="cert-card__issuer">Codepolitan</span>
+          </div>
+          <h3 class="cert-card__title">Fullstack MEVN Shopping Cart</h3>
+          <span class="cert-card__cta">View credential →</span>
+        </a>
+
+        <a class="cert-card" href="https://www.codepolitan.com/c/J0SWVB5/" target="_blank" rel="noopener noreferrer"
+          data-issuer="Codepolitan"
+          aria-label="Implementasi Payment Gateway Indonesia Menggunakan Laravel — Codepolitan">
+          <div class="cert-card__top">
+            <img class="cert-card__icon" loading="lazy" alt="Codepolitan"
+              src="https://www.google.com/s2/favicons?sz=64&domain=codepolitan.com">
+            <span class="cert-card__issuer">Codepolitan</span>
+          </div>
+          <h3 class="cert-card__title">Implementasi Payment Gateway Indonesia Menggunakan Laravel</h3>
+          <span class="cert-card__cta">View credential →</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!--===================== Contact Me =========================-->
+    <section class="contactme section" id="contact">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="section_content">
+              <h2 class="section_title">Contact Me</h2>
+              <span class="section_subtitle">Get In Touch</span>
+            </div>
+
+            <div class="contact_container container grid">
+              <!-- Left: Contact info -->
+              <div class="contact_panel">
+                <div class="contact_information">
+                  <i class="uil uil-phone contact_icon" aria-hidden="true"></i>
+                  <div>
+                    <h3 class="contact_title">Call Me</h3>
+                    <span class="contact_subtitle">+62 812-6537-5989</span>
+                  </div>
+                </div>
+
+                <div class="contact_information">
+                  <i class="uil uil-envelope contact_icon" aria-hidden="true"></i>
+                  <div>
+                    <h3 class="contact_title">Email</h3>
+                    <span class="contact_subtitle">habilnasutionx@gmail.com</span>
+                  </div>
+                </div>
+
+                <div class="contact_information">
+                  <i class="uil uil-location-pin-alt contact_icon" aria-hidden="true"></i>
+                  <div>
+                    <h3 class="contact_title">Location</h3>
+                    <span class="contact_subtitle">Atjeh - Indonesia</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Form -->
+              <form action="https://api.web3forms.com/submit" method="POST" class="contact_form grid"
+                aria-label="Contact form">
+                <input type="hidden" name="access_key" value="0e6fddb1-dde9-4bec-9868-5057c473bff3" />
+                <!-- Optional Web3Forms extras -->
+                <input type="hidden" name="subject" value="New contact from portfolio" />
+                <input type="hidden" name="from_name" value="Portfolio Contact" />
+                <input type="checkbox" name="botcheck" class="hidden" style="display:none;" tabindex="-1"
+                  autocomplete="off" />
+
+                <div class="contact_inputs grid">
+                  <div class="contact_content">
+                    <label class="contact_label" for="name">Name</label>
+                    <input id="name" type="text" name="name" class="contact_input" placeholder="Your full name"
+                      autocomplete="name" required />
+                  </div>
+
+                  <div class="contact_content">
+                    <label class="contact_label" for="email">Email</label>
+                    <input id="email" type="email" name="email" class="contact_input" placeholder="email@domain.com"
+                      autocomplete="email" required />
+                  </div>
+                </div>
+
+                <div class="contact_content">
+                  <label class="contact_label" for="project">Project</label>
+                  <input id="project" type="text" name="project" class="contact_input"
+                    placeholder="e.g. Build a landing page, integrate payment, etc." required />
+                </div>
+
+                <div class="contact_content">
+                  <label class="contact_label" for="message">Message</label>
+                  <textarea id="message" name="message" rows="7" class="contact_input"
+                    placeholder="Tell me about your goals, timeline, and budget (optional)." required></textarea>
+                </div>
+
+                <div class="captcha_row">
+                  <div class="h-captcha" data-captcha="true"></div>
+                </div>
+
+                <div class="submit_button">
+                  <button type="submit" class="button button-flex button_send">
+                    Send Message
+                    <i class="uil uil-message button_icon" aria-hidden="true"></i>
+                  </button>
+                </div>
+
+                <!-- Optional: success/error message placeholders -->
+                <p class="form_hint" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================== Footer ======================= -->
+  <footer class="footer">
+    <div class="footer_bg">
+      <div class="footer_container container grid">
+        <!-- Branding -->
+        <div>
+          <h1 class="footer_title">Habil Nasution</h1>
+          <span class="footer_subtitle">Fullstack Developer</span>
+        </div>
+
+        <!-- Links -->
+        <ul class="footer_links">
+          <li><a href="#portfolio" class="footer_link">Portfolio</a></li>
+          <li><a href="#skills" class="footer_link">Skills</a></li>
+          <li><a href="#contact" class="footer_link">Contact</a></li>
+        </ul>
+
+        <!-- Socials -->
+        <div class="footer_socials" aria-label="Social media links">
+          <a href="https://www.linkedin.com/in/habilnasution/" class="footer_social" target="_blank" rel="noopener"
+            aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="" class="footer_img" />
+          </a>
+          <a href="https://github.com/Noitusanx" class="footer_social" target="_blank" rel="noopener"
+            aria-label="GitHub">
+            <img src="images/github.svg" alt="GitHub" class="footer_img" />
+          </a>
+          <a href="https://www.instagram.com/habilnasutionx" class="footer_social" target="_blank" rel="noopener"
+            aria-label="Instagram">
+            <img src="images/instagram.svg" alt="" class="footer_img" />
+          </a>
+          <a href="https://wa.me/6281265375989" class="footer_social" target="_blank" rel="noopener"
+            aria-label="WhatsApp">
+            <img src="images/whatsapp.svg" alt="" class="footer_img" />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer_divider"></div>
+      <p class="footer_copy">
+        &#169; <span id="year-copy">2025</span> Habil Nasution. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ================= Scroll Top ========================= -->
+  <a href="#" class="scroll-up" id="scroll-up">
+    <i class="uil uil-arrow-up scroll-up_icon"></i>
   </a>
-        <a href="https://www.instagram.com/habilnasutionx" class="footer_social"
-           target="_blank" rel="noopener" aria-label="Instagram">
-          <img src="images/instagram.svg" alt="" class="footer_img" />
-        </a>
-        <a href="https://wa.me/6281265375989" class="footer_social"
-           target="_blank" rel="noopener" aria-label="WhatsApp">
-          <img src="images/whatsapp.svg" alt="" class="footer_img" />
-        </a>
-      </div>
-    </div>
-
-    <div class="footer_divider"></div>
-    <p class="footer_copy">
-      &#169; <span id="year-copy">2025</span> Habil Nasution. All rights reserved.
-    </p>
-  </div>
-</footer>
-
-    <!-- ================= Scroll Top ========================= -->
-    <a href="#" class="scroll-up" id="scroll-up">
-        <i class="uil uil-arrow-up scroll-up_icon"></i>
-    </a>
 
 
-    <!-- ================== Swiper JS ======================== -->
-    <script src="swiper-bundle.min.js"></script>
+  <!-- ================== Swiper JS ======================== -->
+  <script src="swiper-bundle.min.js"></script>
 
-    <!--=================== Main JS ====================-->
-    <script src="index.js"></script>
+  <!--=================== Main JS ====================-->
+  <script src="index.js"></script>
 
-    <!--================ Required for hCaptcha ================= -->
-    <script src="https://web3forms.com/client/script.js" async defer></script>
+  <!--================ Required for hCaptcha ================= -->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 
 </html>
